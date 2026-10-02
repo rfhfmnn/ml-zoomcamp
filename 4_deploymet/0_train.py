@@ -18,7 +18,7 @@ from sklearn.metrics import roc_auc_score
 
 C = 1.0
 n_splits = 5
-output_file = f'model_C={C}.bin'
+output_file = f'4_deploymet/model_C={C}.bin'
 
 
 # data preparation
@@ -26,7 +26,6 @@ output_file = f'model_C={C}.bin'
 df = pd.read_csv('4_deploymet/data/WA_Fn-UseC_-Telco-Customer-Churn.csv')
 
 df.columns = df.columns.str.lower().str.replace(' ', '_')
-
 categorical_columns = list(df.dtypes[df.dtypes == 'object'].index)
 
 for c in categorical_columns:
