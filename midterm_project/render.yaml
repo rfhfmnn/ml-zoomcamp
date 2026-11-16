@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: independiente-predictor
+    env: docker
+    plan: free
+    region: oregon
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /ping
+    envVars:
+      - key: OPTIMAL_THRESHOLD
+        value: "0.41"

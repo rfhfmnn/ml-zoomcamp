@@ -1,0 +1,13 @@
+.git
+.gitignore
+.venv
+.virtualenvs
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints
+notebook.ipynb
+guia.txt
+data/
+*.log
